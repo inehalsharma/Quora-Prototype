@@ -1,0 +1,285 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+a {
+  text-decoration: none !important;
+}
+
+
+.plimit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url("bg.png");
+	background-size: cover;
+	
+	z-index: 2;
+}
+
+
+
+
+
+
+
+.panel{
+  position: absolute;
+  top: calc(30% - 75px);
+	left: calc(31% - 50px);
+	height: 400px;
+	width: 700px;
+	padding: 10px;
+	z-index: 5;
+	background-color:rgb(255, 255, 255)
+}
+.logo{
+	position: absolute;
+	
+	left: calc(37% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 5;
+	
+}
+.logotext{
+	position: absolute;
+	top: calc(43% - 75px);
+	left: calc(20% - 50px);
+	
+	width: 600px;
+	
+	z-index: 5;
+	
+}
+.google{
+	position: absolute;
+	top: calc(65% - 75px);
+	left: calc(10% - 50px);
+	height: 150px;
+	width: 300px;
+	padding: 10px;
+	z-index: 5;
+	
+}
+
+.login{
+	position: absolute;
+	top: calc(55% - 75px);
+	right: calc(15% - 100px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 5;
+
+}
+
+.menu-item {
+  z-index: 5;
+	background-color:rgb(255, 255, 255)
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-body,.modal-header,.modal-footer
+{
+	background: #fff;
+	width: 750px;
+	font-family:  Helvetica,Arial, sans-serif;
+}
+
+.questionAdd{
+	width: 725px;
+	height:130px;
+	border: none;
+}
+
+.modal-body{
+	height:200px;
+}
+
+.modal{
+	position: cl;
+   top: 100px;
+	 right: 100px;
+	 left: 300px;
+	 height:400px;
+  
+}
+
+.modalDialog > div {
+	width: 800px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.panel-signup{
+  position: absolute;
+  top: calc(30% - 75px);
+	left: calc(31% - 50px);
+	height: 500px;
+	width: 700px;
+	padding: 10px;
+	z-index: 5;
+	background-color:rgb(255, 255, 255)
+}
+.logo-signup{
+	position: absolute;
+	
+	left: calc(37% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 5;
+	
+}
+.logotext-signup{
+	position: absolute;
+	top: calc(32% - 75px);
+	left: calc(20% - 50px);
+	
+	width: 600px;
+	
+	z-index: 5;
+	
+}
+.google-signup{
+	position: absolute;
+	top: calc(35% - 75px);
+	left: calc(10% - 50px);
+	height: 150px;
+	width: 300px;
+	padding: 10px;
+	z-index: 5;
+	
+}
+
+.login-signup{
+	position: absolute;
+	top: calc(35% - 75px);
+	right: calc(15% - 100px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 5;
+
+}
+.close:hover { background: #00d9ff; }
+
+.a-hover:hover { 
+	cursor: pointer;
+  }
+
+#cls{
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
